@@ -28,7 +28,7 @@ You're reading it!
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
-The code for this step is contained in the 6th code cell of the IPython notebook.
+The code for this step is contained in the 6th code cell of the [IPython notebook](https://github.com/zezhou/CarND-Vehicle-Detection/blob/master/p5.ipynb).
 
 I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
@@ -137,6 +137,6 @@ when I changed size of sliding windows to (128,128) , I get a better result.
 [window_size2]: ./output_images/window_size2.png
 ![alt text][window_size2]
 
-I use 5 diffrent size of sliding windows in the final pipeline function. 
+Finally, I use 5 diffrent size of sliding windows in the  pipeline function. 
 
 The last but not the least, you can cut the sliding window region to accelarate the processing time. For example, I set `x_start_stop=[400, None]` and `y_start_stop=[400, 500]` in some cases in pipeline.
